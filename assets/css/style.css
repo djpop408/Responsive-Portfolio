@@ -1,0 +1,210 @@
+body {
+    background-color: grey;
+    background-image: url('../images/main-bg.png');
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .nav-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header .nav-container .logo {
+    background-color: #4aaaa5;
+    display: inline-block;
+    float: left;
+    padding: 22px 40px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+header .nav-container nav {
+    float: right;
+    margin-top: 26px;
+}
+
+header .nav-container nav a {
+    color: #444;
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+    padding: 0 14px;
+}
+
+header .nav-container nav a:hover {
+    color: #4aaaa5;
+}
+
+header .nav-container nav a:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+.content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 900px;
+    margin: 32px auto 0 auto;
+    padding: 30px;
+}
+
+.content h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin: 0 0 30px 0;
+}
+
+.content .about-me-photo {
+    width: 140px;
+    height: auto;
+    float: left;
+    margin: 0 25px 15px 0;
+}
+
+.content .portfolio-link {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 0 20px 30px 0;
+}
+
+.content .portfolio-link:hover {
+    opacity: 0.75;
+}
+
+.content .portfolio-link img {
+    width: 100%
+}
+
+.content .portfolio-link span {
+    display: block;
+    position: absolute;
+    background-color: #4aaaa5;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #444;
+    line-height: 1.8em;
+}
+
+form label {
+    color: #333;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+form input, form textarea {
+    border: 2px solid #eee;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form .submit-btn {
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border: none;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+footer {
+    background-color: #666;
+    border-top: 6px solid #4aaaa5;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 5px 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+ /* Media Queries */
+
+ @media only screen and (max-width: 980px) {
+    header .nav-container {
+        width: 897px;
+    }
+    .content {
+        width: 696px;
+        margin: 32px auto 0 30px;
+    }
+    .content .portfolio-link {
+        width: 44%;
+        margin: 0 20px 20px 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    header .nav-container {
+        width: 717px;
+    }
+    .content {
+        width: 606px;
+        margin: 32px auto 0 30px;
+    }
+    .content .about-me-photo {
+        width: 200px;
+    }
+    .content .portfolio-link {
+        width: 44%;
+        margin: 0 20px 20px 0;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    header .nav-container {
+        width: 100%;
+        text-align: center;
+    }
+    header .nav-container nav {
+        margin: 12px auto;
+        display: block;
+        width: 100%;
+    }
+    header .nav-container .logo {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .content {
+        width: 512px;
+        margin: 22px auto 0 20px;
+    }
+    .content .about-me-photo {
+        width: 100%;
+    }
+    .content .portfolio-link {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+  }
